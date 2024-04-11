@@ -26,7 +26,10 @@ const xenoCantoApi = 'https://xeno-canto.org/api/2/recordings?query=bearded+bell
       .then(function(data) {
         console.log(data);
       });
-// Function to add bird to search history
+
+
+      // Function to add bird to search history
+
   function addToSearchHistory(bird) {
     const searchHistoryContainer = document.getElementById('searchHistory');
     const searchHistoryItem = document.createElement('div');
@@ -37,3 +40,5 @@ const xenoCantoApi = 'https://xeno-canto.org/api/2/recordings?query=bearded+bell
       fetchbirdData(bird);
     });
   }
+
+
