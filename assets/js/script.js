@@ -1,4 +1,4 @@
-// nuthatch api key: 6cf4b918-2b6c-4957-9565-908b413ff6e1
+
 
 //const nuthatchApi = 'https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=25&name=bluebird&operator=AND';
 
@@ -16,7 +16,7 @@ const xenoCantoApi = 'https://xeno-canto.org/api/2/recordings?query=bearded+bell
 
       fetch('https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=25&name=bluebird&operator=AND', { //Get some wrens
         headers: {
-          'api-key': '6cf4b918-2b6c-4957-9565-908b413ff6e1'
+          'api-key': 'c4cf748f-f7f9-44a1-8560-b929969c5dab'
         }
       })
       .then(function(response) {
