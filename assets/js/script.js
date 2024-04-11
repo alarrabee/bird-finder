@@ -45,3 +45,20 @@ const nuthatchApi = `https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=
   });
 
 
+
+
+
+      // Function to add bird to search history
+
+  function addToSearchHistory(bird) {
+    const searchHistoryContainer = document.getElementById('searchHistory');
+    const searchHistoryItem = document.createElement('div');
+    searchHistoryItem.classList.add('search-history-item');
+    searchHistoryItem.textContent = bird;
+  
+    searchHistoryItem.addEventListener('click', () => {
+      fetchbirdData(bird);
+    });
+  }
+
+
