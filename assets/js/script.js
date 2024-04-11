@@ -1,6 +1,6 @@
 
 
-//const nuthatchApi = 'https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=25&name=bluebird&operator=AND';
+
 
 const xenoCantoApi = 'https://xeno-canto.org/api/2/recordings?query=bearded+bellbird+q:A';
 
