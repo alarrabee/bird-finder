@@ -41,4 +41,3 @@ const xenoCantoApi = 'https://xeno-canto.org/api/2/recordings?query=bearded+bell
     });
   }
 
-
