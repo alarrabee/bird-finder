@@ -61,4 +61,3 @@ const nuthatchApi = `https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=
     });
   }
 
-
