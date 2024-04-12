@@ -105,6 +105,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .galeryImg {
     display: flex;
@@ -113,13 +114,18 @@ body{
 .galeryAudio {
     overflow-y: hidden;
     border: 0;
-    width: 340px;
-    height: 115px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .birdInfo{
     display: flex;
     flex-wrap: wrap;
     max-width: 90vw;
+    justify-content: center;
+    align-items: center;
 }
 .galeryDesk {
     font-size: 18px;
