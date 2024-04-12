@@ -45,8 +45,40 @@ const nuthatchApi = `https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=
   });
 
 
+  function submitRequest() {
+    let userSearchArray = JSON.parse(localStorage.getItem('theBird')) || [];
+  
+    const searchRequest = {
+    searchRequest: searchBarEl.value
+    }
+  
+    userSearchArray.push(searchRequest);
+    localStorage.setItem('theBird', JSON.stringify(userSearchArray));
+  }
+
+  // fetch(xenoCantoApi)
+
+// .then(function(response) {
+//   console.log(response);
+//   return response.json();
+// })
+
+//   .then(function(data) {
+//     console.log(data);
+
+// });
 
 
+
+searchBtnEl.addEventListener('click', function(e) {
+  e.preventDefault();
+  submitRequest();
+  const searchTextValue = searchBarEl.value.trim();
+  if (searchTextValue) {
+    getBird(searchTextValue)
+  }
+
+});
 
       // Function to add bird to search history
 
