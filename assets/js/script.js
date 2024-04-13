@@ -70,4 +70,15 @@ function displayFacts(birdData) {
   birdFacts.append(statusEl);
   birdFacts.append(sizeEl);
   birdFacts.append(wingSpanEl);
+
+    //displays image
+    const birdImgOne = document.getElementById('birdImg-one');
+    birdImgOne.src = birdData.entities[0].images[0];
+  
+    const birdImgTwo = document.getElementById('birdImg-two');
+    birdImgTwo.src = birdData.entities[0].images[1];
+  
+    // const birdImgThree = document.getElementById('birdImg-three');
+    // birdImgThree.src = birdData.entities[0].images[2];
+  
 }
