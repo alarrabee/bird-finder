@@ -82,3 +82,32 @@ function displayFacts(birdData) {
     // birdImgThree.src = birdData.entities[0].images[2];
   
 }
+
+function getAudio(bird) {
+  const nuthatchApi =  `https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=1&name=${bird}&operator=AND`;
+
+  //nuthatch fetch request
+  fetch(nuthatchApi, { 
+    headers: {
+      'api-key': 'c4cf748f-f7f9-44a1-8560-b929969c5dab'
+    }
+  })
+  .then(function(response) {
+    // console.log(response);
+    return response.json();
+  })
+  .then(function(birdData) {
+    const commonName = birdData.entities[0].name;
+    const commonNameString = commonName.replace(/\s/g, '%20');
+    console.log('name', commonNameString);
+    const xenoCantoApi = `https://xeno-canto.org/api/2/recordings?query=${commonNameString}+q:A`;
+    console.log(xenoCantoApi)
+    return fetch(xenoCantoApi);
+  })
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(audioData) {
+    displayAudio(audioData);
+    })
+  }
