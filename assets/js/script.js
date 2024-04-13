@@ -113,7 +113,7 @@ function getAudio(bird) {
   }
 
 
-  
+
   function displayAudio(audioData) {
     if (audioData.recordings.length > 0) {
       const firstRecordingURL = audioData.recordings[0].url;
@@ -129,3 +129,18 @@ function getAudio(bird) {
     e.preventDefault();
     getBird();
   });
+
+
+
+  // Function to add bird to search history
+
+  function addToSearchHistory(bird) {
+    const searchHistoryContainer = document.getElementById('searchHistory');
+    const searchHistoryItem = document.createElement('div');
+    searchHistoryItem.classList.add('search-history-item');
+    searchHistoryItem.textContent = bird;
+  
+    searchHistoryItem.addEventListener('click', () => {
+      fetchbirdData(bird);
+    });
+  }
