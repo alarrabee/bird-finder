@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chirp</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header class="headerPage">
       <div class="container HeaderContainer">
-        <a href="" class="logo">Bird</a>
+        <a href="" class="logo">Chirp Finder</a>
         <nav class="nav">
           <ul class="navList">
             <li><a href="" class="navLink">Link</a></li>
@@ -37,33 +37,44 @@
 
               <li class="galeryItem birdOne">
                 <div class="galeryImg">
-                  <img 
-                    src="./img/orange.jpg"
+                  <img Id="birdImg-one"
+                    src="./img/orange.jpg"  style="height:auto"
                   />
                 </div>
               </li>
 
               <li class="galeryItem birdTwo">
                 <div class="galeryImg">
-                  <img 
-                    src="./img/yellow.jpg"
+                  <img Id="birdImg-two"
+                    src="./img/yellow.jpg" style="height:auto"
                   />
                 </div>
               </li>
+
+              <!-- <li class="galeryItem birdThree">
+                <div class="galeryImg">
+                  <img Id="birdImg-three"
+                    src="./img/yellow.jpg" style="height:auto"
+                  />
+                </div>
+              </li> -->
             </ul>
           </div>
 
           <div class="galeryAudio">
-            <iframe src='https://xeno-canto.org/121910/embed?simple=1'  frameborder='0'></iframe>
+            <iframe id="birdAudio" src='https://xeno-canto.org/893194/embed?simple=1'  frameborder='0'></iframe>
           </div>
           
           <div class="birdInfo" id="factContainer">
             <ul id="birdFacts">
               <li id="name"></li>
+              <li id="sciName"></li>
               <li id="family"></li>
               <li id="order"></li>
               <li id="region"></li>
               <li id="status"></li>
+              <li id="size"></li>
+              <li id="wingSpan"></li>
             </ul>
         </div>
       </section>
