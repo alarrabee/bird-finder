@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chirp</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="headerPage">
+    <header class="headerPage rounded-full bg-blue-800/15">
       <div class="container HeaderContainer">
         <a href="" class="logo">Chirp Finder</a>
         <nav class="nav">
@@ -20,16 +23,16 @@
       </div>
     </header>
     <main>
-      <section class="sectionsearch">
+      <section class="sectionsearch py-12">
         <div class="container">
-          <form class="searchForm">
-            <label for="searchBar">Search for a bird</label> <!--added label-->
+          <form class="searchForm flex justify-center items-center mb-12 gap-7">
+            <label for="searchBar" class="text-blue-800 font-bold">Search for a bird:</label> <!--added label-->
             <input
               id="searchBar"
               type="text"
               placeholder="Bird name"
-              class="searchInput"/> <!--added id-->
-              <input type="submit" id="searchBtn">
+              class="border-blue-800/30 px-4 py-4 border-2 border-solid rounded-s bg-transparent w-80 h-8"/> <!--added id-->
+              <input type="submit" id="searchBtn" class="bg-blue-800/60 hover:bg-blue-800/90 text-white font-bold py-2 px-4 rounded-full">
           </form>
           <div class="galery">
           
@@ -65,7 +68,7 @@
             <iframe id="birdAudio" src='https://xeno-canto.org/893194/embed?simple=1'  frameborder='0'></iframe>
           </div>
           
-          <div class="birdInfo" id="factContainer">
+          <div class="birdInfo backdrop-invert" id="factContainer">
             <ul id="birdFacts">
               <li id="name"></li>
               <li id="sciName"></li>

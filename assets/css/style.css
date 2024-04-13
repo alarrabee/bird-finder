@@ -20,8 +20,9 @@ body{
     background-position: center;
 }
 .headerPage {
-    background-color: #26308d28;
-    border-radius: 40px;
+    /* background-color: rgba(38, 48, 141, 0.157);
+    bg-blue-800/16 */
+    /* border-radius: 40px; */
 }
 .container {
     width: auto;
@@ -54,30 +55,29 @@ body{
     display: block;
 }
 .sectionsearch {
-    padding: 50px 0;
-   
+    /* padding: 50px 0; */
 }
 .searchForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 50px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 30px; */
+    /* margin-bottom: 50px; */
 }
 .searchInput {
-    width: 300px;
-    height: 30px;
-    background-color: transparent;
-    outline: transparent;
-    border: 1px solid #9c9797;
-    border-radius: 4px;
-    padding-left: 10px;
+    /* width: 300px; */
+    /* height: 30px; */
+    /* background-color: transparent; */
+    /* outline: transparent; */
+    /* border: 1px solid;
+    border-radius: 4px; */
+    /* padding-left: 10px; */
 }
 .searchInput:focus{
-    border-color: #4652d9;
+    /* border-color: #4652d9; */
 }
 .searchBtn {
-    min-width: 70px;
+    /* min-width: 70px;
     height: 30px ;
     cursor: pointer;
     background-color: #4652d9;
@@ -85,7 +85,7 @@ body{
     border-radius: 4px;
     color: #fff;
     letter-spacing: 0.02em;
-    font-size: 18px;
+    font-size: 18px; */
 }
 .galery {
     display: flex;
@@ -113,6 +113,7 @@ body{
     display: flex;
     height: 300px;
     border: 5px outset #26308d80;
+
 }
 .galeryAudio {
     overflow-y: hidden;
