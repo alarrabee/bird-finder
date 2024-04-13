@@ -26,7 +26,7 @@
       <section class="sectionsearch py-12">
         <div class="container">
           <form class="searchForm flex justify-center items-center mb-12 gap-7">
-            <label for="searchBar" class="text-blue-800 font-bold">Search for a bird:</label> <!--added label-->
+            <label for="searchBar" class="text-blue-900 font-bold">Search for a bird:</label> <!--added label-->
             <input
               id="searchBar"
               type="text"
@@ -34,20 +34,20 @@
               class="border-blue-800/30 px-4 py-4 border-2 border-solid rounded-s bg-transparent w-80 h-8"/> <!--added id-->
               <input type="submit" id="searchBtn" class="bg-blue-800/60 hover:bg-blue-800/90 text-white font-bold py-2 px-4 rounded-full">
           </form>
-          <div class="galery">
+          <div class="galery flex flex-wrap justify-center items-center max-w-full">
           
-            <ul class="galeryList">
+            <ul class="galeryList flex flex-wrap justify-center items-center max-w-full gap-10 mb-12">
 
-              <li class="galeryItem birdOne">
-                <div class="galeryImg">
+              <li class="galeryItem birdOne flex flex-wrap justify-center items-center">
+                <div class="galeryImg flex h-72 border-double border-blue-800/30 border-8">
                   <img Id="birdImg-one"
                     src="./img/orange.jpg"  style="height:auto"
                   />
                 </div>
               </li>
 
-              <li class="galeryItem birdTwo">
-                <div class="galeryImg">
+              <li class="galeryItem birdTwo flex flex-wrap justify-center items-center">
+                <div class="galeryImg flex h-72 border-double border-blue-800/30 border-8">
                   <img Id="birdImg-two"
                     src="./img/yellow.jpg" style="height:auto"
                   />
@@ -64,11 +64,11 @@
             </ul>
           </div>
 
-          <div class="galeryAudio">
+          <div class="galeryAudio flex max-w-full h-auto border-0 bg-blue-800/15 justify-center items-center overflow-y-hidden rounded-t-3xl">
             <iframe id="birdAudio" src='https://xeno-canto.org/893194/embed?simple=1'  frameborder='0'></iframe>
           </div>
           
-          <div class="birdInfo backdrop-invert" id="factContainer">
+          <div class="birdInfo flex flex-wrap justify-center items-center max-w-full bg-blue-800/15 rounded-b-3xl pt-2.5 pb-5 text-blue-900 font-bold" id="factContainer">
             <ul id="birdFacts">
               <li id="name"></li>
               <li id="sciName"></li>
