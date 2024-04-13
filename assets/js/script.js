@@ -111,3 +111,21 @@ function getAudio(bird) {
     displayAudio(audioData);
     })
   }
+
+
+  
+  function displayAudio(audioData) {
+    if (audioData.recordings.length > 0) {
+      const firstRecordingURL = audioData.recordings[0].url;
+      console.log("URL of the first recording:", firstRecordingURL);
+      const birdAudioEl = document.getElementById('birdAudio');
+      birdAudioEl.src = `https:${firstRecordingURL}/embed?simple=1`;
+    } else {
+      console.log("No recordings found.");
+  }
+  }
+  //Event listener on search button that will on click call getBird() saving the value to localStorage
+  searchBtnEl.addEventListener('click', function(e) {
+    e.preventDefault();
+    getBird();
+  });
