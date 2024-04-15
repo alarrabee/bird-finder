@@ -129,18 +129,26 @@ function getAudio(bird) {
     e.preventDefault();
     getBird();
   });
+// Add searched term to search history
+    addToHistory(bird.name);
+  }
 
-
-
-  // Function to add bird to search history
-
-  function addToSearchHistory(bird) {
-    const searchHistoryContainer = document.getElementById('searchHistory');
-    const searchHistoryItem = document.createElement('div');
-    searchHistoryItem.classList.add('search-history-item');
-    searchHistoryItem.textContent = bird;
-  
-    searchHistoryItem.addEventListener('click', () => {
-      fetchbirdData(bird);
+  // Function to add search history to local storage
+  function addToHistory(searchTerm) {
+    let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+    history.unshift(searchTerm);
+    history = Array.from(new Set(history)); // Remove duplicates
+    localStorage.setItem("searchHistory", JSON.stringify(history));
+    displayHistory();
+  }
+// Function to display search history
+  function displayHistory() {
+    const history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+    historyList.innerHTML = "";
+    history.forEach(term => {
+      const listItem = document.createElement("li");
+      listItem.textContent = term;
+      historyList.appendChild(listItem);
     });
   }
+
