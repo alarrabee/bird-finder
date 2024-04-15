@@ -47,12 +47,16 @@ body{
     gap: 40px;
     
 }
-.navLink {
+.Link {
     color: #000;
     font-size: 18px;
     line-height: 1.5;
     padding: 28px 0;
     display: block;
+}
+.Link:hover,
+.Link:focus{
+    color: #4a9fcc
 }
 .footerContainer{
     display: flex;
