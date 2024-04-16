@@ -31,8 +31,13 @@ THEN I hear bird sounds corresponding to the correct bird species
 WHEN I click the search bar
 THEN I can see a list of previous species that I've searched
 ```
+## Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **APIs**: 
+- **Storage**: LocalStorage for storing searches, observations, and feedback
 
 ## Website
 
 
 ## Screenshot
+## Acknowledgements
