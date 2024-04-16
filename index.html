@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chirp</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" class="text-blue-900 font-bold text-lg py-7 px-0 block" href="./assets/css/style.css" />
+    <link class="text-blue-900 font-bold text-lg py-7 px-0 block" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link class="text-blue-900 font-bold text-lg py-7 px-0 block" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="headerPage rounded-full bg-blue-800/15">
-      <div class="container HeaderContainer">
-        <a href="" class="logo">Chirp Finder</a>
+    <header class="headerPage rounded-3xl bg-blue-800/15">
+      <div class="container px-3.5 HeaderContainer mx-auto my-0 grid grid-cols-2 justify-items-center items-center text-blue-900 font-bold">
+        <a href="" class="text-2xl uppercase">Chirp Finder</a>
         <nav class="nav">
-          <ul class="navList">
-            <li><a href="https://www.earth.com/earthpedia-articles/15-interesting-birds-you-didnt-know-about/" class="Link">Interesting bird</a></li>
-            <li><a href="https://www.popularmechanics.com/science/animals/g25749619/weirdest-birds/" class="Link">Goofy birds</a></li>
-            <li><a href="https://abcbirds.org/." class="Link">Bird conservation</a></li>
+          <ul class="navList flex gap-10">
+            <li><a href="https://www.earth.com/earthpedia-articles/15-interesting-birds-you-didnt-know-about/" class="Link text-blue-900 font-bold text-lg py-7 px-0 block">Interesting bird</a></li>
+            <li><a href="https://www.popularmechanics.com/science/animals/g25749619/weirdest-birds/" class="Link text-blue-900 font-bold text-lg py-7 px-0 block">Goofy birds</a></li>
+            <li><a href="https://abcbirds.org/." class="Link text-blue-900 font-bold text-lg py-7 px-0 block">Bird conservation</a></li>
           </ul>
         </nav>
       </div>
@@ -25,7 +25,7 @@
     <main>
       <!-- search box where a bird name can be entered -->
       <section class="py-12">
-        <div class="container">
+        <div class="container px-3.5 mx-auto my-0">
           <form class="flex justify-center items-center mb-12 gap-7">
             <label for="searchBar" class="text-blue-900 font-bold">Search for a bird:</label> <!--added label-->
             <input
@@ -42,44 +42,49 @@
               <!-- bird image one -->
               <li class="flex flex-wrap justify-center items-center">
                 <div class="flex h-72 border-double border-blue-800/30 border-8">
-                  <img Id="birdImg-one" onerror="handleImageError(this)"
-                    src="./img/orange.jpg"
+
+                  <img Id="birdImg-one"
+                    src="./img/eagle.png"
                   />
                 </div>
               </li>
               <!-- bird image two -->
               <li class="flex flex-wrap justify-center items-center">
                 <div class="flex h-72 border-double border-blue-800/30 border-8">
-                  <img Id="birdImg-two" onerror="handleImageError(this)"
-                    src="./img/yellow.jpg"
+
+                  <img Id="birdImg-two"
+                    src="./img/eagle1.png"
                   />
                 </div>
               </li>
               <!-- space for bird image three -->
             </ul>
           </div>
-          <!-- bird audio box -->
-          <div class="flex max-w-full h-auto border-0 bg-blue-800/15 justify-center items-center overflow-y-hidden rounded-t-3xl">
-            <iframe id="birdAudio" src='https://xeno-canto.org/893194/embed?simple=1'  frameborder='0'></iframe>
+          <div class="h-auto py-4 gap-2 bg-blue-800/15 rounded-3xl grid grid-cols-2 justify-items-center items-center">
+              <!-- bird audio box -->
+              <div class=" border-0 overflow-y-hidden">
+              <iframe id="birdAudio" src='https://xeno-canto.org/893194/embed?simple=1'  frameborder='0'></iframe>
+            </div>
+            <!-- bird facts box -->
+            <div class="text-blue-900 font-bold" id="factContainer">
+              <ul id="birdFacts">
+                <li id="name"></li>
+                <li id="sciName"></li>
+                <li id="family"></li>
+                <li id="order"></li>
+                <li id="region"></li>
+                <li id="status"></li>
+                <li id="size"></li>
+                <li id="wingSpan"></li>
+              </ul>
+            </div>
           </div>
-          <!-- bird facts box -->
-          <div class="flex flex-wrap justify-center items-center max-w-full bg-blue-800/15 rounded-b-3xl pt-2.5 pb-5 text-blue-900 font-bold" id="factContainer">
-            <ul id="birdFacts">
-              <li id="name"></li>
-              <li id="sciName"></li>
-              <li id="family"></li>
-              <li id="order"></li>
-              <li id="region"></li>
-              <li id="status"></li>
-              <li id="size"></li>
-              <li id="wingSpan"></li>
-            </ul>
-        </div>
+
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container footerContainer">
+      <div class="container px-3.5 footerContainer mx-auto my-0">
         <a href="" class="logo">Bird</a>
 
         <address class="address">

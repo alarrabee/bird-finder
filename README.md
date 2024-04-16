@@ -4,7 +4,7 @@
 For our project our group decided to create a bird finder website. Using our website users will be able to research birds of their choosing and recieve information, pictures, and a recording of the bird.
 
 
-## Title
+## Chirp Finder
 
 ### User Story
 
@@ -23,7 +23,9 @@ THEN I am provided information about the species I searched
 WHEN I view the information on my species
 THEN I see pictures, facts, and a recording of the sounds from my bird species
 WHEN I view the pictures
-THEN I see two pictures of my bird species on of the male and one of the female
+THEN I see a picture of the correct bird species
+WHEN a bird doesn't have a picture in the api
+THEN I am presented a placeholder image that tells me the picture is unavailable 
 WHEN I view the facts
 THEN I am presented facts corresponding to the correct bird species
 WHEN I click play on the recording
@@ -31,8 +33,20 @@ THEN I hear bird sounds corresponding to the correct bird species
 WHEN I click the search bar
 THEN I can see a list of previous species that I've searched
 ```
+## Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **APIs**: Nuthatch API: https://nuthatch.lastelm.software/      Xeno-canto API: https://xeno-canto.org/collection/
+- **CSS Framework**: Tailwind
+- **Storage**: LocalStorage for storing searches, observations, and feedback
 
 ## Website
 
 
 ## Screenshot
+
+## Contributors and Roles
+Alexandra Larrabee: Concept, Setting up the APIs/Erin Mulcahey: Front-end Development HTML and CSS/Jackson Zellermayer: Front-end Development HTML and documentation/Juliette Ngum: localStorage of persistent data/Solomiia Trachuk: Front-end development HTML and CSS.
+
+
+## Acknowledgements
+Guidance provided U of M Coding Bootcamp Instructor (Chris Woolcott), and TA (Steven Castro-Mercado).
