@@ -58,23 +58,26 @@
               <!-- space for bird image three -->
             </ul>
           </div>
-          <!-- bird audio box -->
-          <div class="flex max-w-full h-auto border-0 bg-blue-800/15 justify-center items-center overflow-y-hidden rounded-t-3xl">
-            <iframe id="birdAudio" src='https://xeno-canto.org/893194/embed?simple=1'  frameborder='0'></iframe>
+
+          <div class="h-auto py-4 gap-2 bg-blue-800/15 rounded-3xl grid grid-cols-2 justify-items-center items-center">
+            <div class=" border-0 overflow-y-hidden">
+              <iframe id="birdAudio" src='https://xeno-canto.org/893194/embed?simple=1'  frameborder='0'></iframe>
+            </div>
+            <!-- bird facts box -->
+            <div class="text-blue-900 font-bold" id="factContainer">
+              <ul id="birdFacts">
+                <li id="name"></li>
+                <li id="sciName"></li>
+                <li id="family"></li>
+                <li id="order"></li>
+                <li id="region"></li>
+                <li id="status"></li>
+                <li id="size"></li>
+                <li id="wingSpan"></li>
+              </ul>
+            </div>
           </div>
-          <!-- bird facts box -->
-          <div class="flex flex-wrap justify-center items-center max-w-full bg-blue-800/15 rounded-b-3xl pt-2.5 pb-5 text-blue-900 font-bold" id="factContainer">
-            <ul id="birdFacts">
-              <li id="name"></li>
-              <li id="sciName"></li>
-              <li id="family"></li>
-              <li id="order"></li>
-              <li id="region"></li>
-              <li id="status"></li>
-              <li id="size"></li>
-              <li id="wingSpan"></li>
-            </ul>
-        </div>
+
       </section>
     </main>
 
