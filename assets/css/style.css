@@ -1,23 +1,6 @@
-a {
-    text-decoration: none;
-}
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-p {
-    margin: 0;
-}
 address {
     font-style: normal;
-}
-body{
-    background-image: url(../../img/beautiful-retro-nature-with-birds.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .Link:hover,
 .Link:focus{
