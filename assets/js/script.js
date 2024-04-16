@@ -12,9 +12,13 @@ function getBird() {
   let birdArray = JSON.parse(localStorage.getItem('bird')) || [];
   birdArray.push(searchValue)
   localStorage.setItem('bird', JSON.stringify(birdArray));
-
+// / add Add searched term to search history
+  // 
+  
   getFacts(searchValue);
   getAudio(searchValue);
+  addToHistory(searchValue);
+  
 }
 
 //Will fetch requested bird object from the nuthatch API using search bar text value pulled from localStorage 
@@ -133,9 +137,6 @@ function getAudio(bird) {
     e.preventDefault();
     getBird();
   });
-// Add searched term to search history
-    addToHistory(bird.name);
-
   // Function to add search history to local storage
   function addToHistory(searchTerm) {
     let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
