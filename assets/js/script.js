@@ -131,7 +131,6 @@ function getAudio(bird) {
   });
 // Add searched term to search history
     addToHistory(bird.name);
-  }
 
   // Function to add search history to local storage
   function addToHistory(searchTerm) {

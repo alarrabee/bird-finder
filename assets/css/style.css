@@ -19,41 +19,6 @@ body{
     background-size: cover;
     background-position: center;
 }
-.headerPage {
-    /* background-color: rgba(38, 48, 141, 0.157);
-    bg-blue-800/16 */
-    /* border-radius: 40px; */
-}
-.container {
-    width: auto;
-    padding: 0 15px;
-    margin: 0 auto;
-    max-width: 90vw;
-}
-.HeaderContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo {
-    color: #000;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-.nav {
-}
-.navList {
-    display: flex;
-    gap: 40px;
-    
-}
-.Link {
-    color: #000;
-    font-size: 18px;
-    line-height: 1.5;
-    padding: 28px 0;
-    display: block;
-}
 .Link:hover,
 .Link:focus{
     color: #4a9fcc
