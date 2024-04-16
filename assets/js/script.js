@@ -28,7 +28,7 @@ function getFacts(bird) {
     }
   })
   .then(function(response) {
-    // console.log(response);
+    console.log(response);
     return response.json();
   })
   .then(function(birdData) {
@@ -81,6 +81,10 @@ function displayFacts(birdData) {
     // const birdImgThree = document.getElementById('birdImg-three');
     // birdImgThree.src = birdData.entities[0].images[2];
   
+}
+
+function handleImageError(img) {
+  img.src = 'img/placeholder.png'; // Replace with your placeholder image URL
 }
 
 function getAudio(bird) {
