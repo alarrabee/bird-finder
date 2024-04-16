@@ -12,11 +12,13 @@ function getBird() {
   let birdArray = JSON.parse(localStorage.getItem('bird')) || [];
   birdArray.push(searchValue)
   localStorage.setItem('bird', JSON.stringify(birdArray));
-/ add Add searched term to search history
-    addToHistory(searchValue);
-
+// / add Add searched term to search history
+  // 
+  
   getFacts(searchValue);
   getAudio(searchValue);
+  addToHistory(searchValue);
+  
 }
 
 //Will fetch requested bird object from the nuthatch API using search bar text value pulled from localStorage 
