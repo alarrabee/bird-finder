@@ -83,6 +83,10 @@ function displayFacts(birdData) {
   
 }
 
+function handleImageError(img) {
+  img.src = 'img/placeholder.png'; // Replace with your placeholder image URL
+}
+
 function getAudio(bird) {
   const nuthatchApi =  `https://nuthatch.lastelm.software/v2/birds?page=1&pageSize=1&name=${bird}&operator=AND`;
 
@@ -130,7 +134,7 @@ function getAudio(bird) {
     getBird();
   });
 // Add searched term to search history
-    addToHistory(bird.name):
+    addToHistory(bird.name);
   
   
 
