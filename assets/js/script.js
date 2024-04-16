@@ -28,7 +28,7 @@ function getFacts(bird) {
     }
   })
   .then(function(response) {
-    // console.log(response);
+    console.log(response);
     return response.json();
   })
   .then(function(birdData) {
@@ -131,6 +131,8 @@ function getAudio(bird) {
   });
 
 
+
+  
 
   // Function to add bird to search history
 
