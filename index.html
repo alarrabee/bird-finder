@@ -5,67 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chirp</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="headerPage">
+    <header class="headerPage rounded-full bg-blue-800/15">
       <div class="container HeaderContainer">
         <a href="" class="logo">Chirp Finder</a>
         <nav class="nav">
           <ul class="navList">
-            <li><a href="" class="navLink">Link</a></li>
-            <li><a href="" class="navLink">Link</a></li>
-            <li><a href="" class="navLink">Link</a></li>
+            <li><a href="https://www.earth.com/earthpedia-articles/15-interesting-birds-you-didnt-know-about/" class="Link">Interesting bird</a></li>
+            <li><a href="https://www.popularmechanics.com/science/animals/g25749619/weirdest-birds/" class="Link">Goofy birds</a></li>
+            <li><a href="https://abcbirds.org/." class="Link">Bird conservation</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="sectionsearch">
+      <!-- search box where a bird name can be entered -->
+      <section class="py-12">
         <div class="container">
-          <form class="searchForm">
-            <label for="searchBar">Search for a bird</label> <!--added label-->
+          <form class="flex justify-center items-center mb-12 gap-7">
+            <label for="searchBar" class="text-blue-900 font-bold">Search for a bird:</label> <!--added label-->
             <input
               id="searchBar"
               type="text"
               placeholder="Bird name"
-              class="searchInput"/> <!--added id-->
-              <input type="submit" id="searchBtn">
+              class="border-blue-800/30 px-4 py-4 border-2 border-solid rounded-s bg-transparent w-80 h-8 focus:outline-none"/> <!--added id-->
+              <input type="submit" id="searchBtn" class="bg-blue-800/60 hover:bg-blue-800/90 text-white font-bold py-2 px-4 rounded-full">
           </form>
-          <div class="galery">
-          
-            <ul class="galeryList">
-
-              <li class="galeryItem birdOne">
-                <div class="galeryImg">
+          <!-- container for list of bird images -->
+          <div class="flex flex-wrap justify-center items-center max-w-full">
+            <!-- list bird images -->
+            <ul class="flex flex-wrap justify-center items-center max-w-full gap-10 mb-12">
+              <!-- bird image one -->
+              <li class="flex flex-wrap justify-center items-center">
+                <div class="flex h-72 border-double border-blue-800/30 border-8">
                   <img Id="birdImg-one"
-                    src="./img/orange.jpg"  style="height:auto"
+                    src="./img/orange.jpg"
                   />
                 </div>
               </li>
-
-              <li class="galeryItem birdTwo">
-                <div class="galeryImg">
+              <!-- bird image two -->
+              <li class="flex flex-wrap justify-center items-center">
+                <div class="flex h-72 border-double border-blue-800/30 border-8">
                   <img Id="birdImg-two"
-                    src="./img/yellow.jpg" style="height:auto"
+                    src="./img/yellow.jpg"
                   />
                 </div>
               </li>
-
-              <!-- <li class="galeryItem birdThree">
-                <div class="galeryImg">
-                  <img Id="birdImg-three"
-                    src="./img/yellow.jpg" style="height:auto"
-                  />
-                </div>
-              </li> -->
+              <!-- space for bird image three -->
             </ul>
           </div>
-
-          <div class="galeryAudio">
+          <!-- bird audio box -->
+          <div class="flex max-w-full h-auto border-0 bg-blue-800/15 justify-center items-center overflow-y-hidden rounded-t-3xl">
             <iframe id="birdAudio" src='https://xeno-canto.org/893194/embed?simple=1'  frameborder='0'></iframe>
           </div>
-          
-          <div class="birdInfo" id="factContainer">
+          <!-- bird facts box -->
+          <div class="flex flex-wrap justify-center items-center max-w-full bg-blue-800/15 rounded-b-3xl pt-2.5 pb-5 text-blue-900 font-bold" id="factContainer">
             <ul id="birdFacts">
               <li id="name"></li>
               <li id="sciName"></li>

@@ -20,8 +20,9 @@ body{
     background-position: center;
 }
 .headerPage {
-    background-color: #26308d28;
-    border-radius: 40px;
+    /* background-color: rgba(38, 48, 141, 0.157);
+    bg-blue-800/16 */
+    /* border-radius: 40px; */
 }
 .container {
     width: auto;
@@ -46,103 +47,16 @@ body{
     gap: 40px;
     
 }
-.navLink {
+.Link {
     color: #000;
     font-size: 18px;
     line-height: 1.5;
     padding: 28px 0;
     display: block;
 }
-.sectionsearch {
-    padding: 50px 0;
-   
-}
-.searchForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 50px;
-}
-.searchInput {
-    width: 300px;
-    height: 30px;
-    background-color: transparent;
-    outline: transparent;
-    border: 1px solid #9c9797;
-    border-radius: 4px;
-    padding-left: 10px;
-}
-.searchInput:focus{
-    border-color: #4652d9;
-}
-.searchBtn {
-    min-width: 70px;
-    height: 30px ;
-    cursor: pointer;
-    background-color: #4652d9;
-    border: 1px solid #9c9797;
-    border-radius: 4px;
-    color: #fff;
-    letter-spacing: 0.02em;
-    font-size: 18px;
-}
-.galery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 90vw;
-}
-.galeryList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 50px;
-    max-width: 90vw;
-    justify-content: center;
-    align-items: center;
-}
-.galeryItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.galeryImg {
-    display: flex;
-    height: 300px;
-    border: 5px outset #26308d80;
-}
-.galeryAudio {
-    overflow-y: hidden;
-    border: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #26308d28;
-    border-radius: 40px 40px 0px 0px;
-}
-.birdInfo{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 90vw;
-    justify-content: center;
-    align-items: center;
-}
-#factContainer{
-    background-color: #26308d28;
-    border-radius: 0px 0px 40px 40px;
-    padding: 10px 0px 20px 0px;
-    font-size: 1.2em;
-}
-.galeryDesk {
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: justify;
+.Link:hover,
+.Link:focus{
+    color: #4a9fcc
 }
 .footerContainer{
     display: flex;
