@@ -9,7 +9,7 @@
     <link class="text-blue-900 font-bold text-lg py-7 px-0 block" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="font-serif bg-[url('../../img/beautiful-retro-nature-with-birds.jpg')] bg-no-repeat bg-cover bg-center">
     <header class="headerPage rounded-3xl bg-blue-800/15">
       <div class="container px-3.5 HeaderContainer mx-auto my-0 grid grid-cols-2 justify-items-center items-center text-blue-900 font-bold">
         <a href="" class="text-2xl uppercase">Chirp Finder</a>
@@ -24,8 +24,11 @@
     </header>
     <main>
       <!-- search box where a bird name can be entered -->
-      <section class="py-12">
-        <div class="container px-3.5 mx-auto my-0">
+      <section class=" py-12">
+        <div class=" container px-3.5 mx-auto my-0">
+          <div class="flex justify-center items-center container border-dotted border-2 border-blue-900/80 italic bg-blue-100/60 rounded-3xl text-blue-900 text-center my-4 px-4 mx-auto">
+            <p>Search requires an exact match to the full common name. If you don't include the full common name, the result may show only the first match.</p>
+          </div>
           <form class="flex justify-center items-center mb-12 gap-7">
             <label for="searchBar" class="text-blue-900 font-bold">Search for a bird:</label> <!--added label-->
             <input
@@ -58,13 +61,17 @@
               <!-- space for bird image three -->
             </ul>
           </div>
-          <div class="h-auto py-4 gap-2 bg-blue-800/15 rounded-3xl grid grid-cols-2 justify-items-center items-center">
-              <!-- bird audio box -->
-              <div class=" border-0 overflow-y-hidden">
-              <iframe id="birdAudio" src='https://xeno-canto.org/535101/embed?simple=1'  frameborder='0'></iframe>
+          <div class="px-6 h-auto py-4 gap-2 bg-blue-800/15 rounded-3xl grid grid-cols-3 justify-center justify-items-center items-center">
+            <!-- bird audio box -->
+            <div class="border-0 overflow-y-hidden">
+              <iframe class="items-center" id="birdAudio" src='https://xeno-canto.org/535101/embed?simple=1'  frameborder='0'></iframe>
+            </div>
+            <div>
+              <p class="italic mx-6 max-h-fit border-dotted border-2 border-blue-800/60 rounded-3xl bg-blue-800/40 text-white text-center mx-4 px-4">
+              Some audio recordings may be restricted for species that are under extreme pressure due to trapping and harassment.</p>
             </div>
             <!-- bird facts box -->
-            <div class="text-blue-900 font-bold" id="factContainer">
+            <div class="border-dotted border-2 border-blue-800/60 my-2 mx-6 px-6 container text-white font-semibold bg-blue-800/60 rounded-3xl" id="factContainer">
               <ul id="birdFacts">
                 <li id="name">Common Name: Bald Eagle</li>
                 <li id="sciName">Scientific Name: Haliaeetus leucocephalus</li>
