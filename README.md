@@ -43,7 +43,7 @@ THEN I can see a list of previous species that I've searched
 
 
 ## Screenshot
-
+![mockup](img/screenshot.png)
 ## Contributors and Roles
 Alexandra Larrabee: Concept, Setting up the APIs/Erin Mulcahey: Front-end Development HTML and CSS/Jackson Zellermayer: Front-end Development HTML and documentation/Juliette Ngum: localStorage of persistent data/Solomiia Trachuk: Front-end development HTML and CSS.
 
