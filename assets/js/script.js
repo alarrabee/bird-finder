@@ -1,7 +1,7 @@
 const searchBarEl = document.getElementById('searchBar');
 const searchBtnEl = document.getElementById('searchBtn');
 const birdFacts = document.getElementById('birdFacts');
-
+const historyList = document.getElementById('historyList');
 
 
 
