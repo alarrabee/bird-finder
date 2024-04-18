@@ -1,25 +1,4 @@
-
-address {
-    font-style: normal;
-}
 .Link:hover,
 .Link:focus{
     color: #4a9fcc
-}
-.footerContainer{
-    display: flex;
-    justify-content: space-between;
-}
-.footer {
-padding: 30px 0;
-max-width: 90vw;
-}
-.address {
-}
-.addresslist {
-    display: flex;
-    gap: 40px;
-}
-.addressLink {
-    color: #000;
 }
