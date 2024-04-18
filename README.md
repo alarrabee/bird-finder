@@ -40,7 +40,7 @@ THEN I can see a list of previous species that I've searched
 - **Storage**: LocalStorage for storing searches, observations, and feedback
 
 ## Website
-
+[LINKTOTHEWEBSITE](https://alarrabee.github.io/bird-finder/)
 
 ## Screenshot
 
