@@ -9,9 +9,9 @@ For our project our group decided to create a bird finder website. Using our web
 ### User Story
 
 ```
-AS someone intersted in birds
+AS someone interested in birds
 I WANT a website with facts, pictures, and recordings of different species of birds
-SO THAT when I search a specific bird species I recieve information on my bird 
+SO THAT when I search a specific bird species I receive information on my bird 
 ```
 
 ### Acceptance Criteria 
@@ -43,10 +43,11 @@ THEN I can see a list of previous species that I've searched
 [LINKTOTHEWEBSITE](https://alarrabee.github.io/bird-finder/)
 
 ## Screenshot
-![mockup](img/screenshot.png)
+![image](https://github.com/alarrabee/bird-finder/assets/149320486/6e0aa0c3-e090-4505-8d9d-810d62adb18e)
+
 ## Contributors and Roles
 Alexandra Larrabee: Concept, Setting up the APIs/Erin Mulcahey: Front-end Development HTML and CSS/Jackson Zellermayer: Front-end Development HTML and documentation/Juliette Ngum: localStorage of persistent data/Solomiia Trachuk: Front-end development HTML and CSS.
 
 
 ## Acknowledgements
-Guidance provided U of M Coding Bootcamp Instructor (Chris Woolcott), and TA (Steven Castro-Mercado).
+Guidance provided by U of M Coding Bootcamp Instructor (Chris Woolcott), and TA (Steven Castro-Mercado).
